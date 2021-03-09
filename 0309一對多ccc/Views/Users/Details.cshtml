@@ -1,0 +1,58 @@
+﻿@model _0309一對多ccc.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TestDepartment.Departmentname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TestDepartment.Departmentname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Userpassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Userpassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usertel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usertel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Useremail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Useremail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
